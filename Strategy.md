@@ -5,7 +5,7 @@
 first off we have three main kinds of roles : 
 
 1. Editors : responsible for writing down the sessions.
-2. Reviews : responsible for reviewing the sessions and writing the final resuls in the master branch as well as the wiki.
+2. Reviews : responsible for reviewing the sessions and writing the final resuls in the master branch as well as the [ wiki](https://github.com/Mushtarak-Web-School/Mushtarak-Web-School/wiki).
 3. Localisers : responsible for localising the sessions into arabic or any other language.
 
 ## the contribution strategy
