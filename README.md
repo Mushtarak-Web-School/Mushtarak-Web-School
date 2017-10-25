@@ -9,3 +9,15 @@ we as the school students will be working on  sharing what we are learning right
 and hopefully it could help anybody out there.
 
 ![mushtarak](http://www.mushtarak.me/sites/all/themes/mushtarak/logo.png)
+
+
+# our Contribution strategy 
+
+you can check it out right [here](https://github.com/Mushtarak-Web-School/Mushtarak-Web-School/blob/master/Strategy.md)
+
+# our Team 
+
+* Eng, Ahmed Hussien : Communication and information Engineer (instructor).
+* Ahmed Ayman : Web developer at motoon , Web school 2.0 graduate,Computer Engineering Student (Reviewer)
+* 
+*  

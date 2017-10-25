@@ -19,15 +19,10 @@ this section is about managing the work (how will we contribute with each others
 
 5. the localisers will be awaiting for the changes in the master branch, then they will start localizing it.
 
-## the team
+## convenient schemes and practices
 
-- Name :  breif - contact (role)
-eg, Mohamed : software engineer at Google - Twitter -> @mohame123  (Editor)
+*  Name :  breif , contact (role).
+*  commit messages : kindly check [this](https://chris.beams.io/posts/git-commit/) out.
 
-1.  
-2. 
-3. 
-4. 
-5. 
 
 
