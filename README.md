@@ -20,4 +20,4 @@ you can check it out right [here](https://github.com/Mushtarak-Web-School/Mushta
 * Eng, Ahmed Hussien: Communication and information Engineer (instructor).
 * Ahmed Ayman: Web developer at motoon , Web school 2.0 graduate,Computer Engineering Student (Reviewer)
 * Muhammed Abdulaziz: Web school 3 student (Localizer and editor)
-*  
+* Bassem Mustafa: Web School '3 Student (Editor)  
