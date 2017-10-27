@@ -11,14 +11,14 @@ and hopefully it could help anybody out there.
 ![mushtarak](http://www.mushtarak.me/sites/all/themes/mushtarak/logo.png)
 
 
-# our Contribution strategy 
+# our Contribution strategy
 
 you can check it out right [here](https://github.com/Mushtarak-Web-School/Mushtarak-Web-School/blob/master/Strategy.md)
 
-# our Team 
+# our Team
 
 * Eng, Ahmed Hussien: Communication and information Engineer (instructor).
-* Ahmed Ayman: Web developer at motoon , Web school 2.0 graduate,Computer Engineering Student (Reviewer)
+* [Ahmed Ayman](https://www.linkedin.com/in/ahmedayman055): Web developer at motoon , Web school 2.0 graduate,Computer Engineering Student (Reviewer)
 * Muhammed Abdulaziz: Web school 3 student (Localizer and editor)
 * Bassem Mustafa: Web School '3 Student (Editor)
 *  
