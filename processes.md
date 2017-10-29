@@ -28,7 +28,8 @@ In case of multi-tasking OS, Before switching between tasks the OS stores the la
 - The Default for programs/jobs to run in the foreground (in the shell)
 - To Stop a job (Freeze) without clear a data: `Ctrl+Z`
 - To Re-start a job in foreground:` $ fg %(job-number)`
-- To Close a job and finish the process: `Ctrl+D`
+- To send an end signal and finish the process: `Ctrl+D`
+- To Terminate (Close) a process: `Ctrl+C`
 
 ## Background Jobs:
 - To start a program/job in the background: `$ (program-name) &`
