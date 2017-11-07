@@ -6,7 +6,7 @@ shell script simply is some commands in a file, and the shell interprate it line
 we may use ridiraction. let's try write a script and run it.
 
 ```bash
-cat < myfirstscript.sh
+$ cat < myfirstscript.sh
 ls -l /etc
 cat /etc/passwd
 who
@@ -17,7 +17,7 @@ echo "Done with this shell"
 then run it like this
 
 ```bash
-bash < myfirstscript.sh
+$ bash < myfirstscript.sh
 ```
 
 ## Variables
@@ -28,13 +28,13 @@ In shell any variable is string.
 To declear a variable
 
 ```bash
-MYNAME="Ahmed Hussien"
+$ MYNAME="Ahmed Hussien"
 ```
 
 and to call it
 
 ```bash
-echo $MYNAME
+$ echo $MYNAME
 ```
 
 > How many data types do we have?
@@ -51,7 +51,7 @@ What if we want to concatenate 1 to the variable value when we print it,
 if this is the varible and its type
 
 ```bash
-MYNAME="Ahmed Hussien"
+$ MYNAME="Ahmed Hussien"
 # we want to print it like this
 # Ahmed Hussien1
 ```
@@ -59,13 +59,14 @@ MYNAME="Ahmed Hussien"
 Can we print it like this?
 
 ```bash
-echo $MYNAME1
+$ echo $MYNAME1
 ```
 
 the answer is
 
 ```bash
-echo ${MYNAME}1
+$ echo ${MYNAME}1
+Ahmed Hussien1
 ```
 
 If we want to run the script like any programe without wrinting "bash".
@@ -74,7 +75,7 @@ let's edit `myfirstscript.sh` to be like this.
 
 ```bash
 #!/usr/bin/bash
-cat < myfirstscript.sh
+$ cat < myfirstscript.sh
 ls -l /etc
 cat /etc/passwd
 who
@@ -88,16 +89,54 @@ echo ${MYNAME}1
 then make it executable and run it.
 
 ```bash
-chmod 755 myfirstscript.sh
-./myfirstscript.sh
+$ chmod 755 myfirstscript.sh
+$ ./myfirstscript.sh
 ```
 
-## Shell types
+## Shell modes
+
+1- Non-interactive shell
+
+It knows that it reads from a file.
+
+```bash
+$ bash myfirstscript.sh
+```
+
+2- Interactive shell
+
+It is the defult mode, and when it run a script, it think that it
+reads from STDIN.
+
+```bash
+$ bash < myfirstscript.sh
+# and
+$ ./myfirstscript.sh
+```
+
+The interactive shell has to types
+
+- login interactive shell
+- non-login interactive shell
+
+```bash
+$ ps
+ PID TTY          TIME CMD
+ 7265 pts/0    00:00:00 -bash
+ 7332 pts/0    00:00:00 ps
+```
+
+```bash
+$ ps
+ PID TTY          TIME CMD
+ 7265 pts/0    00:00:00 bash
+ 7332 pts/0    00:00:00 ps
+```
 
 ## Parameters and Arguments
 
 ```bash
-cat >> myfirstscript.sh
+$ cat >> myfirstscript.sh
 echo My name is $0
 echo first argument is $1
 echo second argument is $2
@@ -106,7 +145,12 @@ echo second argument is $2
 then run it
 
 ```bash
-./myfirstscript.sh Hello world
+$ ./myfirstscript.sh Hello world
+...
+...
+My name is myfirstscript.sh
+first argument Hello
+second argument world
 ```
 
 ## Variables types
