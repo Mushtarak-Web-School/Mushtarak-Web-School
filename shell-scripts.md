@@ -116,3 +116,26 @@ then run it
 ## If statement
 
 > read chapter 7 in [Bash Guide for Beginners](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
+
+## Reading from files
+
+```bash
+#!/usr/bin/bash
+for i in $(cat names.list)
+do
+    echo "Hello $i"
+done
+```
+
+```bash
+#!/usr/bin/bash
+exec 4<names.list
+while true
+do
+    read -u 4 i
+    echo "Hello $i"
+done
+```
+
+> ex. to cheak the errors.txt file if there is duplicate error ids that have
+> diffrent error description
