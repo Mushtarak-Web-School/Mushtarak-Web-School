@@ -234,3 +234,13 @@ done
 
 > ex. to cheak the errors.txt file if there is duplicate error ids that have
 > diffrent error description
+
+## Refrences
+
+If you want to get deeper, you can use these refrences
+
+1- [The Linux Command Line](http://www.linuxcommand.org/)
+
+2- [Bash Guide for Beginners](http://tldp.org/LDP/Bash-Beginners-Guide/html/)
+
+3- [Advanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/)
