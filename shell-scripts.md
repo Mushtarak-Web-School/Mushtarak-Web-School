@@ -114,7 +114,7 @@ $ bash < myfirstscript.sh
 $ ./myfirstscript.sh
 ```
 
-The interactive shell has to types
+The interactive shell has two types
 
 - login interactive shell
 - non-login interactive shell
@@ -155,7 +155,58 @@ second argument world
 
 ## Variables types
 
+Any processes inherate
+
+- ENV variables
+- Non-ENV variables
+
 ## For loop
+
+With loops we can use one statement or more, more than one time.
+
+Lets see the syntax of for loop.
+
+write the folowing script
+
+```bash
+#!/usr/bin/bash
+for i in Hello There Who are you
+do
+    echo "The variable i has the value" ${i}
+done
+```
+
+In the first line, for and in are keywords, i is a varible, and (Hello There Who are you) are the values which assines to i. in the next lines do and done are keywords, the for loop will repeat any commands between them.
+
+lets run it.
+
+```bash
+The variable i has the value Hello
+The variable i has the value There
+The variable i has the value Who
+The variable i has the value are
+The variable i has the value you
+```
+
+In the first time for assained Hello to i, and in the second time it assained There to i, and so on until it reached to the last value then it finshed the loop.
+
+Try to change the first line to be like this
+
+```bash
+for i in "Hello There" "Who are you"
+```
+
+## comments
+
+Any line starts with # the shell will ignore it. like this
+
+```bash
+echo "Hello there"
+#echo "Who are you"
+```
+
+You can use comments to document your script or to make shell ignore
+something.
 
 ## If statement
 
