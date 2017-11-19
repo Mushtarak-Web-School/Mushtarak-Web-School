@@ -23,7 +23,7 @@ $ bash < myfirstscript.sh
 ## Variables
 
 Variables are named memory locations.\
-In shell any variable is string.
+In shell any variable is a string.
 
 To declear a variable
 
@@ -31,7 +31,7 @@ To declear a variable
 $ MYNAME="Ahmed Hussien"
 ```
 
-and to call it
+and to call it or use it
 
 ```bash
 $ echo $MYNAME
@@ -45,7 +45,7 @@ there is 3 main types
 - numiric
 - boolian
 
-these types called simple data types
+these types called simple data types.
 
 What if we want to concatenate 1 to the variable value when we print it,
 if this is the varible and its type
@@ -69,7 +69,7 @@ $ echo ${MYNAME}1
 Ahmed Hussien1
 ```
 
-If we want to run the script like any programe without wrinting "bash".
+If we want to run the script like any programe without wrinting "bash" before the script name.
 we use hash bang #! some times called shbang or she bang.
 let's edit `myfirstscript.sh` to be like this.
 
@@ -95,15 +95,7 @@ $ ./myfirstscript.sh
 
 ## Shell modes
 
-1- Non-interactive shell
-
-It knows that it reads from a file.
-
-```bash
-$ bash myfirstscript.sh
-```
-
-2- Interactive shell
+1- Interactive shell
 
 It is the defult mode, and when it run a script, it think that it
 reads from STDIN.
@@ -114,10 +106,19 @@ $ bash < myfirstscript.sh
 $ ./myfirstscript.sh
 ```
 
-The interactive shell has two types
+The interactive shell has two types:
 
 - login interactive shell
 - non-login interactive shell
+
+login shell means that the shell started after the user loged into the 
+system.
+
+Non-login like when you run the termenal.
+
+You can know that your shell is login or not, see your processes,
+if the shell name startes with - that mean it is a login shell.
+that becouse 
 
 ```bash
 $ ps
@@ -133,6 +134,23 @@ $ ps
  7332 pts/0    00:00:00 ps
 ```
 
+2- Non-interactive shell
+
+It knows that it reads from a file.
+
+```bash
+$ bash myfirstscript.sh
+```
+
+### Startup Scripts
+
+When the shell starts it run a script. This script defines 
+behaviors and variables.
+The main script locate in `/etc/profile`, in this file the adminaster
+can define any thing gloabely.
+
+So, where 
+
 ## Parameters and Arguments
 
 ```bash
@@ -147,6 +165,7 @@ then run it
 ```bash
 $ ./myfirstscript.sh Hello world
 ...
+
 ...
 My name is myfirstscript.sh
 first argument Hello
@@ -154,6 +173,8 @@ second argument world
 ```
 
 ## Variables types
+
+> this section not commplet yet
 
 Any processes inherate
 
@@ -205,7 +226,7 @@ echo "Hello there"
 #echo "Who are you"
 ```
 
-You can use comments to document your script or to make shell ignore
+You can use comments to document your script or to tell shell to ignore
 something.
 
 ## If statement
